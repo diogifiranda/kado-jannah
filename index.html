@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday Asmaul Jannah ✨</title>
     <!-- Tailwind CSS untuk tampilan modern & clean -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,15 +46,15 @@
         <button id="music-btn" onclick="toggleMusic()" class="w-7 h-7 rounded-full bg-neutral-900 text-white text-xs flex items-center justify-center hover:bg-neutral-800 transition-all cursor-pointer">
             ▶
         </button>
-        <!-- Ganti URL di bawah ini dengan link lagu MP3 pilihanmu -->
+        <!-- Tautan Lagu MP3 Romantis (Bisa diganti dengan link lagu pilihanmu) -->
         <audio id="bg-music" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" loop></audio>
     </div>
 
     <!-- Hero Section -->
     <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 relative overflow-hidden bg-gradient-to-b from-rose-50/40 to-transparent">
         <!-- Dekorasi Latar Belakang Bunga Estetik -->
-        <div class="absolute top-[-10%] left-[-10%] w-80 h-80 md:w-96 md:h-96 opacity-25 rounded-full filter blur-xl -z-10" style="background-image: url('http://googleusercontent.com/image_collection/image_retrieval/7769501481800240826_0'); background-size: cover;"></div>
-        <div class="absolute bottom-[-10%] right-[-10%] w-80 h-80 md:w-96 md:h-96 opacity-20 rounded-full filter blur-xl -z-10" style="background-image: url('http://googleusercontent.com/image_collection/image_retrieval/7769501481800240826_1'); background-size: cover;"></div>
+        <div class="absolute top-[-10%] left-[-10%] w-80 h-80 md:w-96 md:h-96 opacity-25 rounded-full filter blur-xl -z-10" style="background-image: url('https://images.unsplash.com/photo-1526047932273-341f2a7631f9?q=80&w=500'); background-size: cover;"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-80 h-80 md:w-96 md:h-96 opacity-20 rounded-full filter blur-xl -z-10" style="background-image: url('https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=500'); background-size: cover;"></div>
 
         <div class="fade-in space-y-6 max-w-2xl">
             <p class="text-xs tracking-[0.2em] text-neutral-500 uppercase font-medium">A Special Day • 21 Juni 2008</p>
@@ -65,13 +65,12 @@
             <p class="text-neutral-600 font-light max-w-md mx-auto leading-relaxed text-sm md:text-base">
                 Hari ini dunia menjadi jauh lebih indah. Selamat menyambut usia yang baru, ruang kecil ini dibuat khusus untuk merayakan kehadiranmu di hidupku.
             </p>
-            <div class="pt-4 flex flex-col sm:flex-row gap-3 justify-center items-center">
-                <a href="#gallery" class="inline-block border border-neutral-300 text-neutral-700 px-6 py-3 rounded-full text-xs tracking-wider uppercase font-medium hover:bg-neutral-50 transition-all duration-300">
-                    Lihat Foto Kamu
-                </a>
-                <a href="#letter" onclick="playMusicOnNav()" class="inline-block bg-neutral-900 text-white px-6 py-3 rounded-full text-xs tracking-wider uppercase font-medium hover:bg-neutral-800 transition-all duration-300 shadow-sm">
-                    Buka Surat Romantis
-                </a>
+            <div class="pt-4 flex justify-center items-center">
+                <!-- Tombol Utama yang Menggabungkan Semua Fitur -->
+                <button onclick="startJourney()" class="group relative inline-flex items-center gap-2 bg-neutral-900 hover:bg-rose-600 text-white px-8 py-4 rounded-full text-xs tracking-widest uppercase font-medium hover:scale-105 transition-all duration-500 shadow-md cursor-pointer">
+                    Mulai Perjalanan Kita ✨
+                    <span class="inline-block transition-transform group-hover:translate-x-1 duration-300">→</span>
+                </button>
             </div>
         </div>
     </section>
@@ -120,7 +119,7 @@
                 <!-- TIPS: Ganti "foto1.jpg" dengan nama file fotomu yang ditaruh di folder yang sama -->
                 <div class="polaroid bg-white p-4 pb-6 shadow-md border border-neutral-100 rounded-sm -rotate-3 max-w-[260px] mx-auto">
                     <div class="aspect-square bg-neutral-100 overflow-hidden mb-4">
-                        <img src="foto1.jpeg" alt="Foto Jannah 1" class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-500" onerror="this.src='http://googleusercontent.com/image_collection/image_retrieval/7769501481800240826_2'">
+                        <img src="foto1.jpeg" alt="Foto Jannah 1" class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-500" onerror="this.src='https://images.unsplash.com/photo-1518895949257-7621c3c786d7?q=80&w=500'">
                     </div>
                     <p class="serif-font italic text-sm text-neutral-600"> can't take my eyes off you </p>
                 </div>
@@ -129,7 +128,7 @@
                 <!-- TIPS: Ganti "foto2.jpg" dengan nama file fotomu -->
                 <div class="polaroid bg-white p-4 pb-6 shadow-md border border-neutral-100 rounded-sm rotate-2 max-w-[260px] mx-auto">
                     <div class="aspect-square bg-neutral-100 overflow-hidden mb-4">
-                        <img src="foto2.jpeg" alt="Foto Jannah 2" class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-500" onerror="this.src='http://googleusercontent.com/image_collection/image_retrieval/7769501481800240826_0'">
+                        <img src="foto2.jpeg" alt="Foto Jannah 2" class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-500" onerror="this.src='https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=500'">
                     </div>
                     <p class="serif-font italic text-sm text-neutral-600"> the prettiest soul 🤍 </p>
                 </div>
@@ -138,7 +137,7 @@
                 <!-- TIPS: Ganti "foto3.jpg" dengan nama file fotomu -->
                 <div class="polaroid bg-white p-4 pb-6 shadow-md border border-neutral-100 rounded-sm -rotate-2 max-w-[260px] mx-auto">
                     <div class="aspect-square bg-neutral-100 overflow-hidden mb-4">
-                        <img src="foto3.jpeg" alt="Foto Jannah 3" class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-500" onerror="this.src='http://googleusercontent.com/image_collection/image_retrieval/7769501481800240826_1'">
+                        <img src="foto3.jpeg" alt="Foto Jannah 3" class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-500" onerror="this.src='https://images.unsplash.com/photo-1526047932273-341f2a7631f9?q=80&w=500'">
                     </div>
                     <p class="serif-font italic text-sm text-neutral-600"> my favorite human 🌸 </p>
                 </div>
@@ -198,11 +197,23 @@
             }
         }
 
-        // Otomatis putar musik saat tombol "Buka Surat" diklik
-        function playMusicOnNav() {
+        // Fungsi Alur Perjalanan Romantis (Scroll Sequence)
+        function startJourney() {
+            // 1. Putar Musik Otomatis
             if (music.paused) {
                 toggleMusic();
             }
+
+            // 2. Bergeser ke Bagian Foto (Gallery) terlebih dahulu
+            const gallerySection = document.getElementById('gallery');
+            gallerySection.scrollIntoView({ behavior: 'smooth' });
+
+            // 3. Jeda selama 3.5 detik (memberikan waktu pacar melihat foto-fotonya)
+            // Baru kemudian bergeser otomatis ke Surat Romantis
+            setTimeout(() => {
+                const letterSection = document.getElementById('letter');
+                letterSection.scrollIntoView({ behavior: 'smooth' });
+            }, 3500); // 3500 milidetik = 3.5 detik
         }
 
         // Fitur Hitung Mundur (Countdown)
@@ -234,4 +245,3 @@
     </script>
 </body>
 </html>
-`
